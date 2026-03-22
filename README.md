@@ -7,6 +7,11 @@ Feed URL:
 
 - `https://troyj.github.io/fdroid/repo/`
 
+Currently deployed apps:
+
+- Tree Viewer (`com.prado.treeviewer`, current feed versionCode `72`) from `TroyJ/prado-overlays/accessibility-tree-viewer`
+- GPS Sim (`com.prado.gpssim`, current feed versionCode `1`) from `TroyJ/prado-overlays/gps-sim`
+
 What lives here:
 
 - published APKs
