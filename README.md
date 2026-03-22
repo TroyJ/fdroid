@@ -1,32 +1,24 @@
 # TroyJ F-Droid Feed
 
-This repo is the public artifact repo for TroyJ Android apps distributed
-through the shared F-Droid feed.
+## Feed: Live feed URL
 
-Feed URL:
+https://troyj.github.io/fdroid/repo/
 
-- `https://troyj.github.io/fdroid/repo/`
+## Feed: Published apps in this feed
 
-Currently deployed apps:
+| App | Package ID | Version Name | Version Code | Published APK | Source Repo | App Source Path | APK Build Path |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| GPS Sim | `com.prado.gpssim` | 1.0 | `1` | `repo/com.prado.gpssim-v1.apk` | [TroyJ/prado-overlays](https://github.com/TroyJ/prado-overlays) | `gps-sim` | `gps-sim/app/build/outputs/apk/release/app-release.apk` |
+| Tree Viewer | `com.prado.treeviewer` | 1.72 | `72` | `repo/com.prado.treeviewer-v72.apk` | [TroyJ/prado-overlays](https://github.com/TroyJ/prado-overlays) | `accessibility-tree-viewer` | `accessibility-tree-viewer/app/build/outputs/apk/release/app-release.apk` |
 
-- Tree Viewer (`com.prado.treeviewer`, current feed versionCode `72`) from `TroyJ/prado-overlays/accessibility-tree-viewer`
-- GPS Sim (`com.prado.gpssim`, current feed versionCode `1`) from `TroyJ/prado-overlays/gps-sim`
+## Feed: Public surfaces
 
-What lives here:
+- GitHub repo homepage: https://github.com/TroyJ/fdroid
+- GitHub Pages landing page: https://troyj.github.io/fdroid/
+- F-Droid repo page: https://troyj.github.io/fdroid/repo/
 
-- published APKs
-- F-Droid index files
-- app icons
-- per-app release metadata
+## Generation
 
-What does not live here:
-
-- app source code
-- shared deployment scripts
-- signing secrets
-
-Publishing model:
-
-- `main` contains repo metadata such as this README
-- `gh-pages` contains the published feed snapshot served by GitHub Pages
-- shared deployment logic lives in `TroyJ/fdroid-tools`
+Automatically generated during deploy by
+`TroyJ/fdroid-tools/scripts/render-feed-readme.py`. Do not edit
+`main/README.md` by hand.
