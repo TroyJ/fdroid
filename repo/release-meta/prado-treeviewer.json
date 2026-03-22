@@ -1,0 +1,227 @@
+{
+  "generated_at_utc": "2026-03-22T11:40:48Z",
+  "app_id": "prado-treeviewer",
+  "package_id": "com.prado.treeviewer",
+  "version_name": "1.073",
+  "version_code": 73,
+  "source_repo_remote": "https://github.com/TroyJ/prado-overlays.git",
+  "app_source_directory": "accessibility-tree-viewer",
+  "apk_source_path": "accessibility-tree-viewer/app/build/outputs/apk/release/app-release.apk",
+  "source_hash": "cc54744c113ebfe0d179acf4bd01f1330e62562596ca58961d9fc7f42b4368e7",
+  "source_commit": "e501c12a60d8a84779e547f54ae4a7a20ee44f91",
+  "source_hash_scope": "git ls-files accessibility-tree-viewer excluding build outputs and local.properties",
+  "published_changelogs": {
+    "1": {
+      "sha256": "22f3329f3b811508a81136e488e5a1a672b38af318d3b4f8d45b5c82c2b5e708",
+      "text": "Released: 2026-02-17 12:29 AEDT\nInitial release with accessibility tree overlay and interactive block controls.\n"
+    },
+    "2": {
+      "sha256": "9805fe8af2754219e80e520a43987cee6c2d180307853509e8462e2fe4377ce8",
+      "text": "Released: 2026-02-17 12:36 AEDT\n- Added right-side interactive block overlay with clickable/long-clickable controls\n- Added show/hide toggle for right-side overlay\n- Added auto-incrementing version with version display at startup\n- Fixed: initial tree scan now triggers on service connect\n- Reduced log font size for better density\n- Log buffer capped at 3000 lines\n- Yellow overflow indicator at bottom-right corner\n"
+    },
+    "3": {
+      "sha256": "437d2412f176f78e795157b3196ca18fffda213d966c8852445347c3a695f007",
+      "text": "Released: 2026-02-17 12:41 AEDT\n- Fixed version scheme to 1.<build number>\n- Version displayed in overlay log at service startup\n- Blocks refresh on scroll and window changes\n- Initial tree scan triggers immediately on service connect\n"
+    },
+    "4": {
+      "sha256": "c5e4a141b1dec948b6caa9447a540ddbc63290b8df24adfd1330a987d69f356a",
+      "text": "Released: 2026-02-17 13:00 AEDT\n- Version number displayed on the main setup screen\n"
+    },
+    "5": {
+      "sha256": "03cf4cbe879e759da91b0e9c42166cd9945fb6638a3dfca0b94f7c118cdbea4c",
+      "text": "Released: 2026-02-17 13:08 AEDT\n- Block scanning now uses deepest-first (post-order) traversal\n- Prevents large parent containers from creating incorrect mega-blocks\n- Consumed nodes excluded from higher-level block calculations\n"
+    },
+    "6": {
+      "sha256": "9acff0a9a492df83bb195a33bc05f67059d93b885f157384d50400b64c1f9175",
+      "text": "Released: 2026-02-17 13:12 AEDT\n- Long-press PgUp/PgDn to jump to start/end of log\n- Version string pinned as first line (always visible when scrolled)\n"
+    },
+    "7": {
+      "sha256": "a9f5d58143601eab4099e5891c4fb4f9ab3f9ef53e2a4fd26aea9e5dbbd877a1",
+      "text": "Released: 2026-02-17 13:15 AEDT\n- Self-clickable leaf nodes (standalone buttons/icons) now get their own block\n- Block text labels scoped to un-consumed children only (no leaked text from deeper blocks)\n- Timestamps added to all changelogs\n"
+    },
+    "8": {
+      "sha256": "73668434d1b3b6cfd6cf236515d245b6cd1a4ac95bc3feb52499d46e9151fa4a",
+      "text": "Released: 2026-02-17 13:29 AEDT\n- Cached tree comparison: skip all updates when accessibility tree unchanged\n- Single tree walk replaces two separate passes (log + blocks)\n- Internal CachedNode data class for structural equality, independent of log\n- Blocks no longer flicker on unchanged screens\n"
+    },
+    "9": {
+      "sha256": "d0496f1795f919c65d697ec17677d619a5b5c5a5b0034596ff6fc5d6ffa66699",
+      "text": "Released: 2026-02-17 19:00 AEDT\n- R button now also hides the log overlay (not just the right-side blocks)\n- Button bar (PgUp/PgDn/R/X) is draggable \u2014 drag to reposition anywhere\n- All buttons are now square (screenWidth/16) with centered text\n"
+    },
+    "11": {
+      "sha256": "08498f036fb4a0fa4b1d5b057108eb2499ecf60a05f6e326a662520fc6a9557c",
+      "text": "Add embedded REST server (NanoHTTPD) on port 8080 for remote automation. Endpoints: /status, /tree, /blocks, /click/{index}, /long-click/{index}. Pinned status line shows server URL. Reduced log buffer to 500 lines."
+    },
+    "12": {
+      "sha256": "ff5f7f1611248201512ffed39689c6911f1144d2e8bd04cda60e4137d39b66b2",
+      "text": "Double GitHub Pages verification timeout to 10 minutes."
+    },
+    "16": {
+      "sha256": "c1bebb9ffad5676f530d9b50de211ac4918a95df3e4b14c2bc9ad8990dba6a00",
+      "text": "Fix F-Droid metadata: changelogs, description, and summary now appear in F-Droid client. Add AEDT publish timestamp to release notes."
+    },
+    "18": {
+      "sha256": "2e937da69f235be594ba6f774a9c4a27f9ccf74773ef4509b23f7fb072d7c77e",
+      "text": "F-Droid summary now shows version string. Build fails if summary exceeds 80 chars."
+    },
+    "19": {
+      "sha256": "2e937da69f235be594ba6f774a9c4a27f9ccf74773ef4509b23f7fb072d7c77e",
+      "text": "F-Droid summary now shows version string. Build fails if summary exceeds 80 chars."
+    },
+    "20": {
+      "sha256": "cae536f449cf475b4a1061b5e4fc09ed2ab9f9741513be238d3fafd02e889065",
+      "text": "Replace emoji buttons with Material Design vector icons. Both overlay panels hidden by default on startup."
+    },
+    "27": {
+      "sha256": "47330d0e32969288b0c9ef56efdb528c4bd8b3fc56f1de828b1c56512c5193c5",
+      "text": "- 14x3 grid layout system for button bar\n- Button labels on all 17 buttons\n- Rounded corners (20px) on all buttons\n- Clickable area extends into grid gaps (no dead pixels)\n- Debug grid cell visualization flag\n- Close button uses standard button factory\n"
+    },
+    "28": {
+      "sha256": "32ccdb54fa253155d518331009e9709ef4f1549620ecb4f3c8fbae0b907e7b7c",
+      "text": "- Grid expanded to 14\u00d77 (from 14\u00d73) for multi-row button spans\n- Right-side buttons now 3\u00d73 cells (WiFi, Maps, Close, Test, Firefox, Music)\n- Left-side buttons 1\u00d73 tall (VolDn, PgUp, Clear, Blocks, VolUp, PgDn, LPanel, RSide)\n- Bottom row height factor now configurable constant\n- Corner radius increased to 20px\n"
+    },
+    "29": {
+      "sha256": "6436b4ee3f368cad922569e82d0ae288bed666a884a1bf4ccfafcedb2e1be48f",
+      "text": "- Navigation button opens Waze\n- Maps button opens Google Maps directly\n- WiFi button uses floating panel (API 29+)\n- Maps pin icon, navigation arrow icon\n- Fix package visibility for app launchers (Android 11+)\n- 40-column grid layout with 4x4 and 5x3 buttons\n"
+    },
+    "30": {
+      "sha256": "a3175abf07dbd426e3d8d16f5fa8dd1d1c346e9df964933237d8d4a90ac4921b",
+      "text": "Move secrets out of APK into private app storage. Secrets now pushed via REST API at deploy time. Add API Keys UI to MainActivity.\n"
+    },
+    "31": {
+      "sha256": "f1e2fcc7ffbd69229c159baffd7a815de68a28cf07e4969911ee0f15f76e17f4",
+      "text": "- Split button bar into per-button overlay windows for touch pass-through\n- Add volume key event detection via onKeyEvent with status indicator buttons\n- Log all hardware key events with enum names (e.g. KEYCODE_VOLUME_UP)\n"
+    },
+    "33": {
+      "sha256": "353cf9a050167f082f8a56248d0ec17da87c471cae9354adfef7af0981a37e32",
+      "text": "File transfer API, logging refactor, Node.js runtime, UI icons\n\n- Add REST file transfer endpoints (GET/PUT /files) with Range and Content-Range support\n- Add chunked file-transfer.sh client script with automatic resume\n- Integrate nodejs-mobile v18.20.4 embedded runtime with JNI bridge\n- Extract logging to standalone com.prado.log package (LoggerFactory, Logger, LogBackend)\n- Add Material Design icons for button bar\n- Update DOM enhancement and accessibility design docs\n"
+    },
+    "38": {
+      "sha256": "7b415ca1edfafcec62478784b77e51832c263ea61b60df6049e6c76ebcb95e61",
+      "text": "Multi-window awareness for split-screen support\n\n- /whats-on-screen reports all visible apps, layout mode (normal/split), and focused app\n- DOM tree report classifies windows by category (Apps, System, Overlay)\n- Visible text and interactive element extraction includes all app windows, not just focused\n"
+    },
+    "39": {
+      "sha256": "3e8a57f628a16542da6dddc99681ed513ba85c18e68c0ebf803bb49a36ccc918",
+      "text": "- Standardize button label padding with shared constant (2px edge pad)\n- Match long-press label color to bottom label (gray)\n- Swap Maps and Navigation button positions\n- Recents button goes Home first for deterministic state (long-press: 1s delay)\n"
+    },
+    "40": {
+      "sha256": "21f8618afaa4d97bf5b3dc6b1658905d29b4a1646bc107e8170c2b7dde53f959",
+      "text": "Replace Node button with Split View button\n- Launches Waze + Tree Viewer, then enters split screen via recents\n- Toast notifications at each step with error detection\n"
+    },
+    "41": {
+      "sha256": "5fb2f700840b04ee6fd996b65c7be81353bd1d83c804fcebbf486eac97d52d1d",
+      "text": "Build system speed improvements (21.5s \u2192 1s incremental builds)\n- Persistent Gradle daemon with JDK 17 pinning\n- Parallel module builds, build cache, configuration cache\n- Skip lint during iterative development\n"
+    },
+    "42": {
+      "sha256": "e591c990645c9e162dd98ad9273911f7c4eba4af618619bea67c07faf2d7929f",
+      "text": "SDK extensions module, thread priorities, split screen detection\n- New android-sdk-extensions library with ergonomic wrappers for AccessibilityWindowInfo/NodeInfo\n- Set thread priorities: URGENT_AUDIO for audio capture, BACKGROUND for logging/archival\n- ScreenTypeChecker detects home, recents, split screen, and foreground app state\n- Listen to all accessibility event types (typeAllMask)\n- Replace implicit 'it' with named lambda parameters project-wide\n"
+    },
+    "43": {
+      "sha256": "01ea397fe9bf035dce021d9f1a276996cdd154aac22bd18bac13e7a99e92802d",
+      "text": "Settings panel detection, coding conventions\n- Detect and report settings panel title in screen state\n- Log screenState message before posting to sticky notification\n- Convert ScreenTypeChecker from file-scope functions to object scope\n- Rename systemState() to onAccessibilityEvent()\n"
+    },
+    "44": {
+      "sha256": "e107b521e5d5358bff24bc6d8e791eac843169dbe488254f54d3f8706c31effd",
+      "text": "Remove flagEnableAccessibilityVolume from accessibility config\n"
+    },
+    "45": {
+      "sha256": "e107b521e5d5358bff24bc6d8e791eac843169dbe488254f54d3f8706c31effd",
+      "text": "Remove flagEnableAccessibilityVolume from accessibility config\n"
+    },
+    "46": {
+      "sha256": "81ece6715715df6f6d3b0140aa196ba143a085d6d4d4111c1807ce9849e16be8",
+      "text": "Add launch system documentation and GPS tooling\n"
+    },
+    "47": {
+      "sha256": "cd56f2d1b8f6fe053d35d5d21c6d4daf1438155c94d310614889e791f41d953a",
+      "text": "Add swap split-screen button and AOSP framework reference"
+    },
+    "48": {
+      "sha256": "08792fdd2d9cb0e7f385c4ff339eb7c91bc855d2c8c9bd77a65dcb7b4453e0ae",
+      "text": "Refactor split-screen swap, media manager, and state aggregator; reorganize button modules and gesture helpers"
+    },
+    "49": {
+      "sha256": "f569c4bf77f0aabfb2a930051ecf1de47e7fc5c7d093eac199166ef957761a69",
+      "text": "Disable MediaManager to fix crash on real devices\n"
+    },
+    "50": {
+      "sha256": "cf4f98cf7dfaf3e5f4d989c55308ab83e14705ac2afa1fc19dda8e168cd414a9",
+      "text": "Add before/after crash debugging logging to MediaManager start/stop lifecycle\nRe-enable MediaManager (ENABLE_MEDIA_MANAGER = true)\n"
+    },
+    "51": {
+      "sha256": "6db2b78352ce0f74ce14bf7bda325e63daf66f57f17fca621658b3cbba682b1d",
+      "text": "Disable MediaManager (ENABLE_MEDIA_MANAGER = false) to fix crash on overlay start\nUpdate logging documentation with on-device log file path for physical device\n"
+    },
+    "52": {
+      "sha256": "b471f305f55c643d7a22a3f8772ddf3a5e50a5af7985dd61003db6a41531ffd0",
+      "text": "Re-enable MediaManager with extensive trace logging across all async callbacks\nAdd lifecycle trace logging to onServiceConnected/onDestroy\nAdd log level prefix and AEDT timestamp to all log lines\nPromote trace calls to debug in DomSnapshotManager and PradoAccessibilityService\n"
+    },
+    "53": {
+      "sha256": "13431fb4611267627c150662755fbff9eaf960fc136501b4fdc61bba209ab99e",
+      "text": "Add second layer of trace logging: PermissionManager poll/dispatch, MediaManager public API (buildStatusSection, buildMediaAudioSnapshotJson, routing, commands), session change listener dispatch, updateSessionSummaryLocked, SettingsMonitorUtil start\n"
+    },
+    "54": {
+      "sha256": "e3d29adaf5a492835414003703a5babf95238f69dc1fdd4105c1dba89ed6157f",
+      "text": "Add safe mode: alternating crash guard that boots into HTTP+tunnel-only mode after a crash, then auto-recovers to normal on next restart.\n"
+    },
+    "55": {
+      "sha256": "9ff3f8a47328678386fc80d656391b737014ed1c35989458a526a107c94866fc",
+      "text": "Release 1.55\n\n- Fix F-Droid publish path alignment for GitHub Pages.\n- Enforce artifact-branch safety in deploy documentation and workflow.\n- Improve deploy reliability guidance for branch/source configuration.\n"
+    },
+    "56": {
+      "sha256": "bbd3e0190a6e72d8c75c166cad6f3ee7e1e370c1cfbdb97bfa154ba63559e7dc",
+      "text": "Release 1.56\n\n- Add SLF4J + logback-android logging backend with daily file rotation.\n- Remove main thread dispatch hop from log path.\n- Add blocking flush mode for crash debugging (GlobalConstants kill switch).\n- Add --integration-test flag to quick-deploy.sh (placeholder).\n"
+    },
+    "57": {
+      "sha256": "72d61a349a321a727ed5d8a99e0aa8cc11fdc1d07ff4957e75b604643e080b45",
+      "text": "Release 1.57\n\n- Add GlobalExceptionHandler.wrap for crash recovery in onServiceConnected.\n- Add lifecycle trace logging to ButtonBarManager, NotificationManager, PermissionManager, SettingsMonitorUtil.\n- Add POST /kill endpoint for remote process termination.\n- Add hardKill to HttpServerHost interface.\n- Promote DOM snapshot build/action logs from TRACE to DEBUG.\n- Add ListenerRegistry.size() method.\n- Move GlobalConstants.globalInit from MainActivity to onServiceConnected.\n"
+    },
+    "58": {
+      "sha256": "2cebffa8c4dce906e10bcd7f494e87480501992618436f07bc70606cea79f4a6",
+      "text": "Fix Media and Audio status not populating in /status endpoint\n"
+    },
+    "61": {
+      "sha256": "d19bb1a5c89219fbc42ab9099e2f7985303f948e38c98cf0c8a6f260b70e2c71",
+      "text": "Add SYU head unit radio control via REST API (POST /radio/on)\n"
+    },
+    "62": {
+      "sha256": "d19bb1a5c89219fbc42ab9099e2f7985303f948e38c98cf0c8a6f260b70e2c71",
+      "text": "Add SYU head unit radio control via REST API (POST /radio/on)\n"
+    },
+    "63": {
+      "sha256": "598bf732af4c8179fd6dd71027965ffce4949debaab1d9baca05d7833d5f4037",
+      "text": "Stability improvements for exception handling and background workers.\n\n- Standardized thread and coroutine crash wrapping.\n- Improved fatal error logging coverage for uncaught exceptions.\n- Hardened internal async pipelines to prevent silent thread failures.\n"
+    },
+    "64": {
+      "sha256": "9f54a1d1ff8c3586c54ea755721a3b268c8fe129806e832e8b72843ccf438429",
+      "text": "Build and deploy refresh release.\n\n- Incremented release version for F-Droid guard compliance.\n- Published updated signed APK and repository metadata.\n"
+    },
+    "65": {
+      "sha256": "7aa1793c6da0c914794669beb4206c00b1768e1aaf84baa0e9e3a017d73190ab",
+      "text": "3D viewer environment and material update.\n\n- Fixed the forest environment map loading path so the viewport skybox and IBL apply correctly.\n- Added spotlight intensity control in the 3D demo lighting controls.\n- Improved Prado window glass materials for more readable environment reflections.\n- Default local deploys now use the debuggable release build, with full release still available explicitly.\n"
+    },
+    "66": {
+      "sha256": "cd16e800f03b79c6af955ae8b83392dc2b52f85ba94ecd0f4b2a933c44a609ab",
+      "text": "3D demo defaults now start from the current Prado real-device setup.\n\n- Default car paint starts on Silver\n- Default ground mode starts on Flat\n- Bloom and SSR now default Off; AO defaults On\n- Updated default camera/lighting/material values for the 3D demo\n- Fixed startup sun direction so the actual light matches the slider default\n"
+    },
+    "67": {
+      "sha256": "522c1a361132815f3d3a0db376a981065a523b92531b79dae3141defbd657217",
+      "text": "- Add a symlink-aware filesystem manifest endpoint for repeatable device snapshot capture.\n- Improve filesystem snapshot metadata and local loop/alias test coverage.\n"
+    },
+    "68": {
+      "sha256": "f18afc5b11d59b95eded2ac98c00dcf6409791fb12fd7322fc527151cc14213d",
+      "text": "- Add remote zip export for filesystem manifests and automatic host-side unzip/cleanup.\n- Add repeatable exclude-prefix filters and record the exact filter set in snapshot metadata and reports.\n"
+    },
+    "69": {
+      "sha256": "26e528e1df3508df0ff3d7d8c687ae3a24e6d8fc7427dfe89fdf42cf9e7e8897",
+      "text": "- Expand the current 3D demo and graph tooling updates in the accessibility-tree-viewer app.\n- Continue HTTP route and file-transfer refactors, including the filesystem manifest export workflow.\n- Keep the packaged release within F-Droid hosting limits by removing oversized HDR assets.\n"
+    },
+    "70": {
+      "sha256": "3b30d123a523717c947925779c0738af9f00a39d65e8e57d8fc1cbebd67ad9a2",
+      "text": "- Fix 3D demo environment switching so Turtle resolves app-owned HDR files reliably on Android 13.\n- Add internal-storage-first environment lookup and tighten the environment cycle button to only show available choices.\n- Continue the 3D demo, logging, and external-asset pipeline work without packaging oversized HDR assets in the APK.\n"
+    },
+    "73": {
+      "sha256": "2738a77c2c9a8debad8980514ba15e5f6fa091f3bf7181f9effac03392eba5ae",
+      "text": "Updated Prado Tree Viewer release with current app, bridge server, and tooling changes.\n\nPublished: 2026-03-22 22:40 AEDT\n"
+    }
+  }
+}
